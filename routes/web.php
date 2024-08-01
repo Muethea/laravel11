@@ -1,12 +1,11 @@
 <?php
 
+use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/users', function (){
-    return 'dsddsdd';
-} );
+Route::resource('/users', UserController::class);
 
 
 Route::get('/', function () {
